@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  color: hsl(228, 12%, 48%);
+}
+
+.container {
+  width: 70rem;
+  height: 50rem;
+  display: flex;
+  margin: 15rem auto;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+}
+
+.description-box {
+  padding: 3.2rem;
+}
+
+.product-title {
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+  font-weight: 500;
+}
+
+.primary-header {
+  font-family: "Fraunces", serif;
+  font-size: 4.8rem;
+  color: hsl(212, 21%, 14%);
+  line-height: 1;
+  margin: 3.2rem 0;
+}
+
+div.img {
+}
+
+.perfume-img {
+  /* width: 100%; */
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  height: 100%;
+}
+
+.product-description {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+
+.new-price {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+  margin-right: 2.4rem;
+}
+
+.old-price {
+  text-decoration: line-through;
+  font-size: 1.6rem;
+}
+
+.cart {
+  position: relative;
+  text-align: center;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.cart-img {
+  width: 2.4rem;
+  height: 2.4rem;
+  stroke: white;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+}
+
+.btn {
+  background-color: hsl(158, 36%, 37%);
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: hsl(0, 0%, 100%);
+  padding: 1.4rem 4.8rem;
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: #2a5a48;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 780px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 90vh;
+  }
+
+  .perfume-img {
+    background-image: url("images/image-product-mobile.jpg");
+  }
+}
